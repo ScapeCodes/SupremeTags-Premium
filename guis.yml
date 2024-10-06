@@ -1,0 +1,216 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                       Gui                            | #
+# +------------------------------------------------------+ #
+############################################################
+
+gui:
+  main-menu:
+    title: '&8Main Menu'
+    size: 27
+    custom-items:
+      close:
+        enable: true
+        slot: 26
+        displayname: '&c&lClose Menu'
+        material: 'RED_BED'
+        custom-model-data: 0
+        lore:
+          - '&7Click to close the menu!'
+        click-commands:
+          - '[close]'
+  personal-tags:
+    title: '&8Personal Tags'
+  personal-tags-editor:
+    title: '&8Tag Editor > %identifier%'
+  tag-menu:
+    title: '&8Tag Menu'
+    size: 54
+    tags-per-page: 28
+    slots-tag:
+      # set true to control how you want to layout tags.
+      enable: false
+      # These will be the slots that tags will be assigned to each page.
+      # 1. In this example there are 14 slots, this means you need to put 'tags-per-page' above to 14.
+      # 2. if false, tags will start at the first empty slot by default.
+      slots:
+        - 19 # starting slot
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34 # ending slot
+    global-tag-lores: # set 'use-global-lore' to true in config.yml if you want to use global tag lores.
+      unlocked-lore:
+        - '%description%'
+        - ''
+        - '&7Tag &8➜ %tag%'
+        - '&7Variants &8➜ &e%variants%'
+        - '&7Preview &8➜ &f%player_name% %tag%&8: &fHi'
+        - ''
+        - '&e&nClick to Assign'
+      # used for selected tag view
+      selected-lore:
+        - '%description%'
+        - ''
+        - '&7Tag &8➜ %tag%'
+        - '&7Variants &8➜ &e%variants%'
+        - '&7Preview &8➜ &f%player_name% %tag%&8: &fHi'
+        - ''
+        - '&a&nThis tag is selected!'
+      # used for cost lores that are locked
+      locked-lore:
+        - '%description%'
+        - ''
+        - '&7Tag &8➜ %tag%'
+        - '&7Variants &8➜ &e%variants%'
+        - '&7Preview &8➜ &f%player_name% %tag%&8: &fHi'
+        - ''
+        - '&7Buy &8&l> &fRight-Click'
+        - '&7Cost &8&l> &f$%cost%'
+        - ''
+        - '&c&nThis tag is locked'
+      # used for when 'locked-view' is enabled and players doesn't have permission
+      locked-permission:
+        - '%description%'
+        - ''
+        - '&7Tag &8➜ %tag%'
+        - '&7Variants &8➜ &e%variants%'
+        - '&7Preview &8➜ &f%player_name% %tag%&8: &fHi'
+        - ''
+        - '&7&oNo permission to select this tag!'
+        - ''
+        - '&c&nThis tag is locked'
+    custom-items:
+      balance:
+        enable: true
+        slot: 0
+        displayname: '&7Balance &a$%vault_eco_balance%'
+        material: 'EMERALD'
+        custom-model-data: 0
+        click-commands:
+          - '[message] &7Balance: &a$%vault_eco_balance%'
+          #- '[player] balance'
+          #- '[console] eco give %player% 100'
+  tag-variants-menu:
+    title: '&8%identifier%''s Variants'
+    size: 54
+    item:
+      display-item: 'NAME_TAG'
+      displayname: '&7Variant: %tag%'
+      custom-model-data: 0
+      lore:
+        unlocked-lore:
+          - '&7Tag &8➜ %tag%'
+          - '&7Preview &8➜ &f%player_name% %tag%&8: &fHi'
+          - ''
+          - '&e&nClick to Assign'
+        selected-lore:
+          - '&7Tag &8➜ %tag%'
+          - '&7Preview &8➜ &f%player_name% %tag%&8: &fHi'
+          - ''
+          - '&a&nThis tag is selected!'
+        locked-permission:
+          - '&7Tag &8➜ %tag%'
+          - '&7Preview &8➜ &f%player_name% %tag%&8: &fHi'
+          - ''
+          - '&7&oNo permission to select this variant!'
+          - ''
+          - '&c&nThis tag is locked'
+  tag-editor-menu:
+    title: '&8Tag Editor'
+    specific-tag-editor-title: '&7Tag ➟ [%identifier%]'
+    tag-item:
+      displayname: '&7Tag: %tag%'
+      lore:
+        - '&7&m-----------------------------'
+        - ''
+        - '&bIdentifier: &7%identifier%'
+        - ''
+        - '&dDescription:'
+        - '&7%description%'
+        - ''
+        - '&eClick to Edit!'
+        - '&7&m-----------------------------'
+    editor-items:
+      change-tag: '&e&lChange Tag'
+      change-description: '&e&lChange Description'
+      change-permission: '&e&lChange Permission'
+      change-category: '&e&lChange Category'
+      delete-tag: '&c&lDelete Tag'
+  # disable items in the gui.
+  # setting these values to false will not display the item in tag gui.
+  items:
+    ## WARNING ##
+    # these default items names can't be changed!
+    # but you can make new displayable static items.
+    close:
+      enable: true
+      slot: 49
+      displayname: '&c&lClose'
+      material: 'BARRIER'
+      custom-model-data: 0
+      lore:
+        - '&7Close the Menu!'
+    reset:
+      enable: true
+      slot: 46
+      displayname: '&c&lReset'
+      material: 'RED_DYE'
+      custom-model-data: 0
+      lore:
+        - '&7Reset your tag by to default!'
+    glass: # this will only be disabled for 'FULL' layout type.
+      enable: true
+      displayname: '&c'
+      material: 'GRAY_STAINED_GLASS_PANE'
+      custom-model-data: 0
+    personal-tags:
+      enable: true
+      slot: 8
+      displayname: '&b&lPersonal Tags'
+      material: 'ENDER_PEARL'
+      custom-model-data: 0
+      lore:
+        - '&7Create your own tags!'
+    # create tag is for personal tags menu
+    create-tag:
+      enable: true
+      slot: 53
+      displayname: '&b&lCreate a Tag'
+      material: 'ENDER_PEARL'
+      custom-model-data: 0
+      lore:
+        - '&7Create a new tag!'
+    active:
+      enable: true
+      slot: 52
+      displayname: '&6&l%player%'
+      material: 'NAME_TAG'
+      custom-model-data: 0
+      lore:
+        - '&7Your Active Tag: &6%identifier%'
+    next:
+      enable: true
+      slot: 50
+      displayname: '&f&lNext'
+      material: 'ARROW'
+      custom-model-data: 0
+      lore:
+        - '&7Go to the next page!'
+    back:
+      enable: true
+      slot: 48
+      displayname: '&f&lBack'
+      material: 'ARROW'
+      custom-model-data: 0
+      lore:
+        - '&7Go to the previous page!'
