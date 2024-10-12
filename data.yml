@@ -26,6 +26,12 @@ data:
   # Credentials for the database.
   username: 'user'
   password: 'pass'
-  # leave this, if you don't know how to use options.
-  options: 'useSSL=false&autoReconnect=true'
   useSSL: false
+
+  mysql-pool-settings:
+    minimum-idle: 10
+    maximum-pool-size: 20
+    timeouts:
+      idle: 870000000
+      connection: 870000000
+      max-lifetime: 870000000

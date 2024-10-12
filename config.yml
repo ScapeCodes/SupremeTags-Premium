@@ -13,6 +13,7 @@ settings:
       - tag
       - stags
       - supremetags
+  bungee-messaging: false # when set to true, this will sync all tags across all servers, without having to manually do this.
   default-tag: 'none' # set 'none' players start with no tag.
   forced-tag: false # this will make it force players to have a tag, they won't beable to take the tag off.
   categories: false # should supremetags use the category system?
@@ -47,5 +48,4 @@ settings:
   prioritise-selected-tag: true # set false if you don't want selected tag to force at first slot.
   voucher-redeem-permission: true # set false if you don't want permission 'supremetags.voucher.[identifier]' applying to tag vouchers.
   deactivate-click: true # set false if you don't want function where if you click the active tag item in gui, it will deactivate.
-  hide-next-item: true # if false, the 'next-item' will always been shown in the tags gui.
   use-global-lore: true # if true, the tags will use the global tag lores in guis.yml

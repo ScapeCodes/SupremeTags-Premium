@@ -3,6 +3,13 @@
 # |                       Gui                            | #
 # +------------------------------------------------------+ #
 ############################################################
+#
+# In 2.0.10 comes multi slots for any custom items in the gui, you can follow the format below.
+# - by simply changing "slot" to "slots", now you will be able to do a number list;
+# slots:
+#   - 1
+#   - 2
+#   - 30
 
 gui:
   main-menu:
