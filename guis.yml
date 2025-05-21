@@ -3,7 +3,6 @@
 # |                       Gui                            | #
 # +------------------------------------------------------+ #
 ############################################################
-#
 # In 2.0.10 comes multi slots for any custom items in the gui, you can follow the format below.
 # - by simply changing "slot" to "slots", now you will be able to do a number list;
 # slots:
@@ -28,8 +27,18 @@ gui:
           - '[close]'
   personal-tags:
     title: '&8Personal Tags'
+    items:
+      no-tags-item:
+        enable: true
+        slot: 22
+        material: 'ANVIL'
+        custom-model-data: 0
+        displayname: '&cYou don''t have any personal tags!'
+        lore:
+          - '&7Click on the &lCreate a Tag &7Item to create a tag'
   personal-tags-editor:
     title: '&8Tag Editor > %identifier%'
+    size: 27
   tag-menu:
     title: '&8Tag Menu'
     size: 54
@@ -55,13 +64,16 @@ gui:
         - 32
         - 33
         - 34 # ending slot
-    global-tag-lores: # set 'use-global-lore' to true in config.yml if you want to use global tag lores.
+    global-tag-lores:
       unlocked-lore:
         - '%description%'
         - ''
         - '&7Tag &8➜ %tag%'
         - '&7Variants &8➜ &e%variants%'
         - '&7Preview &8➜ &f%player_name% %tag%&8: &fHi'
+        - '&7Unlocked &8➜ &f%track_unlocked%'
+        - '&7Effects &8➜'
+        - '&7%effects%'
         - ''
         - '&e&nClick to Assign'
       # used for selected tag view
@@ -71,6 +83,9 @@ gui:
         - '&7Tag &8➜ %tag%'
         - '&7Variants &8➜ &e%variants%'
         - '&7Preview &8➜ &f%player_name% %tag%&8: &fHi'
+        - '&7Unlocked &8➜ &f%track_unlocked%'
+        - '&7Effects &8➜'
+        - '&7%effects%'
         - ''
         - '&a&nThis tag is selected!'
       # used for cost lores that are locked
@@ -80,6 +95,8 @@ gui:
         - '&7Tag &8➜ %tag%'
         - '&7Variants &8➜ &e%variants%'
         - '&7Preview &8➜ &f%player_name% %tag%&8: &fHi'
+        - '&7Effects &8➜'
+        - '&7%effects%'
         - ''
         - '&7Buy &8&l> &fRight-Click'
         - '&7Cost &8&l> &f$%cost%'
@@ -92,6 +109,9 @@ gui:
         - '&7Tag &8➜ %tag%'
         - '&7Variants &8➜ &e%variants%'
         - '&7Preview &8➜ &f%player_name% %tag%&8: &fHi'
+        - '&7Unlocked &8➜ &f%track_unlocked%'
+        - '&7Effects &8➜'
+        - '&7%effects%'
         - ''
         - '&7&oNo permission to select this tag!'
         - ''
@@ -103,10 +123,93 @@ gui:
         displayname: '&7Balance &a$%vault_eco_balance%'
         material: 'EMERALD'
         custom-model-data: 0
+        hide-tooltip: false # 1.21.5+ only
         click-commands:
           - '[message] &7Balance: &a$%vault_eco_balance%'
           #- '[player] balance'
           #- '[console] eco give %player% 100'
+  # Each action is auto synced, meaning they are hidden depending on the tag permissions/cost/active options.
+  # Don't change the item names as this will remove functionality.
+  tag-actions-menu:
+    enable: false # if false, the system will use its default click to active tag function.
+    title: 'Tag Actions'
+    size: 27
+    functions:
+      # withdraw-tag - withdraw
+      # this item will show rather than editor-tag if the player doesn't have permission.
+      withdraw-tag:
+        enable: true
+        slot: 11
+        display-item: 'NAME_TAG'
+        displayname: '&7Withdraw %tag%'
+        custom-model-data: 0
+        lore:
+          - '&8Withdraw'
+          - ''
+          - '&a&nClick to withdraw this tag'
+        hide-tooltip: false # 1.21.5+ only
+      # editor-tag - send you to the tag editor
+      editor-tag:
+        enable: true
+        slot: 11
+        permission-required: true # requires supremetags.admin
+        display-item: 'NAME_TAG'
+        displayname: '&7Edit %tag%'
+        custom-model-data: 0
+        lore:
+          - '&8Edit Tag'
+          - ''
+          - '&a&nClick to edit this tag'
+        hide-tooltip: false # 1.21.5+ only
+      # assigns-tag - equips the tag.
+      assign-tag:
+        enable: true
+        slot: 15
+        display-item: 'NAME_TAG'
+        displayname: '&7Assign %tag%'
+        custom-model-data: 0
+        lore:
+          - '&8Assign Tag'
+          - ''
+          - '&a&nClick to assign this tag'
+        hide-tooltip: false # 1.21.5+ only
+      # purchase-tag - buys the tag if it's a cost-tag.
+      purchase-tag:
+        enable: true
+        slot: 15
+        display-item: 'NAME_TAG'
+        displayname: '&7Purchase %tag%'
+        custom-model-data: 0
+        lore:
+          - '&8Purchase Tag'
+          - ''
+          - '&a&nClick to purchase this tag'
+        hide-tooltip: false # 1.21.5+ only
+      # unassign-tag - resets the activated tag to none.
+      unassign-tag:
+        enable: true
+        slot: 15
+        display-item: 'RED_DYE'
+        displayname: '&7Reset %tag%'
+        custom-model-data: 0
+        lore:
+          - '&8UnAssign Tag'
+          - ''
+          - '&a&nClick to reset this tag'
+        hide-tooltip: false # 1.21.5+ only
+      # variants - Opens variants Menu for the tag.
+      variants:
+        enable: true
+        hide-when-zero: true # If true, the plugin will hide the item when the tags has 0 variants.
+        slot: 13
+        display-item: 'LIME_DYE'
+        displayname: '&7Variants'
+        custom-model-data: 0
+        lore:
+          - '&8Variants'
+          - ''
+          - '&a&nClick to view variants'
+        hide-tooltip: false # 1.21.5+ only
   tag-variants-menu:
     title: '&8%identifier%''s Variants'
     size: 54
@@ -147,6 +250,8 @@ gui:
         - ''
         - '&eClick to Edit!'
         - '&7&m-----------------------------'
+
+    ####### change
     editor-items:
       change-tag: '&e&lChange Tag'
       change-description: '&e&lChange Description'
@@ -167,19 +272,21 @@ gui:
       custom-model-data: 0
       lore:
         - '&7Close the Menu!'
+      hide-tooltip: false # 1.21.5+ only
     reset:
       enable: true
       slot: 46
-      displayname: '&c&lReset'
+      displayname: '&c&lReset Tag'
       material: 'RED_DYE'
       custom-model-data: 0
-      lore:
-        - '&7Reset your tag by to default!'
+      lore: []
+      hide-tooltip: false # 1.21.5+ only
     glass: # this will only be disabled for 'FULL' layout type.
       enable: true
       displayname: '&c'
       material: 'GRAY_STAINED_GLASS_PANE'
       custom-model-data: 0
+      hide-tooltip: true # 1.21.5+ only
     personal-tags:
       enable: true
       slot: 8
@@ -188,6 +295,7 @@ gui:
       custom-model-data: 0
       lore:
         - '&7Create your own tags!'
+      hide-tooltip: false # 1.21.5+ only
     # create tag is for personal tags menu
     create-tag:
       enable: true
@@ -197,6 +305,7 @@ gui:
       custom-model-data: 0
       lore:
         - '&7Create a new tag!'
+      hide-tooltip: false # 1.21.5+ only
     active:
       enable: true
       slot: 52
@@ -205,6 +314,7 @@ gui:
       custom-model-data: 0
       lore:
         - '&7Your Active Tag: &6%identifier%'
+      hide-tooltip: false # 1.21.5+ only
     next:
       enable: true
       slot: 50
@@ -213,6 +323,7 @@ gui:
       custom-model-data: 0
       lore:
         - '&7Go to the next page!'
+      hide-tooltip: false # 1.21.5+ only
     back:
       enable: true
       slot: 48
@@ -221,3 +332,55 @@ gui:
       custom-model-data: 0
       lore:
         - '&7Go to the previous page!'
+      hide-tooltip: false # 1.21.5+ only
+    search:
+      enable: true
+      slot: 45
+      displayname: '&e&lSearch Tags'
+      material: 'OAK_SIGN'
+      custom-model-data: 0
+      lore:
+        - '&7Search for tags!'
+      hide-tooltip: false # 1.21.5+ only
+    sort:
+      enable: true
+      slot: 5
+      displayname: '&e&lSorting by: %sort%'
+      material: 'ENDER_EYE'
+      custom-model-data: 0
+      lore:
+        - '&8Sort'
+        - ''
+        - '%sort_lore%'
+        - ''
+        - '&a&nClick to change rarity'
+      hide-tooltip: false # 1.21.5+ only
+      sorts:
+        selected:
+          no-filter: '&8&l> &8No Filter!'
+          rarity: '&8&l> &f&l%rarity%'
+        unselected:
+          no-filter: '&8&l> &8No Filter!'
+          rarity: '&8&l> &7%rarity%'
+    filter:
+      enable: true
+      slot: 3
+      displayname: '&e&lFiltering by: %filter%'
+      material: 'HOPPER'
+      custom-model-data: 0
+      lore:
+        - '&8Filter'
+        - ''
+        - '%filter_lore%'
+        - ''
+        - '&a&nClick to change filter type'
+      hide-tooltip: false # 1.21.5+ only
+      filters:
+        selected:
+          your-tags: '&8&l> &f&lYour Tags'
+          all-tags: '&8&l> &f&lAll Tags'
+          category: '&8&l> %category%'
+        unselected:
+          your-tags: '&8&l> &7Your Tags'
+          all-tags: '&8&l> &7All Tags'
+          category: '&8&l> %category%'

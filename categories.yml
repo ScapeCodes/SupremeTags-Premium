@@ -21,26 +21,32 @@ categories:
       - '&7Default tags: &7%tags_amount%'
       - ''
       - '&8&m-----------------------------'
+    filter-labels:
+      selected: '&7&lDEFAULT'
+      unselected: '&7Default'
     permission: 'supremetags.category.default' # permission players will need to open this menu
     permission-see-category: false # if set true and if player doesn't have the permission `supremetags.category.<category>` they will not see it.
     no-permission-message: '%prefix% &cYou have no permission to open the &7Default &cCategory!'
-  achivements:
-    title: '&8Achivements Tags (Page %page%)' # title of the category gui.
+  achievements:
+    title: '&8Achievements Tags (Page %page%)' # title of the category gui.
     material: 'BOOK' # item material.
     custom-model-data: 0
     cost-category: false
     glow: false
-    id_display: '&6&lAchivements Tags' # item displayname.
+    id_display: '&6&lAchievements Tags' # item displayname.
     slot: 13 # slot this item will be in the main menu.
     lore:
       - '&8&m-----------------------------'
       - ''
-      - '&6Achivements tags: &7%tags_amount%'
+      - '&6Achievements tags: &7%tags_amount%'
       - ''
       - '&8&m-----------------------------'
-    permission: 'supremetags.category.achivements' # permission players will need to open this menu
+    filter-labels:
+      selected: '&6&lACHIEVEMENTS'
+      unselected: '&7Achievements'
+    permission: 'supremetags.category.achievements' # permission players will need to open this menu
     permission-see-category: false # if set true and if player doesn't have the permission `supremetags.category.<category>` they will not see it.
-    no-permission-message: '%prefix% &cYou have no permission to open the &7Achivements &cCategory!'
+    no-permission-message: '%prefix% &cYou have no permission to open the &7Achievements &cCategory!'
   holiday:
     title: '&8Holiday Tags (Page %page%)' # title of the category gui.
     material: 'BOOK' # item material.
@@ -55,6 +61,9 @@ categories:
       - '&cHoliday tags: &7%tags_amount%'
       - ''
       - '&8&m-----------------------------'
+    filter-labels:
+      selected: '&c&lHOLIDAY'
+      unselected: '&7Holiday'
     permission: 'supremetags.category.holiday' # permission players will need to open this menu
     permission-see-category: false # if set true and if player doesn't have the permission `supremetags.category.<category>` they will not see it.
     no-permission-message: '%prefix% &cYou have no permission to open the &7Holiday &cCategory!'

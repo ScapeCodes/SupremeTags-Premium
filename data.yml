@@ -28,6 +28,7 @@ data:
   password: 'pass'
   useSSL: false
 
+  # connection pool settings.
   mysql-pool-settings:
     minimum-idle: 10
     maximum-pool-size: 20

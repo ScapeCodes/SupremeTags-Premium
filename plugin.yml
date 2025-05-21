@@ -1,0 +1,24 @@
+name: 'SupremeTags'
+version: '2.1.7'
+main: net.noscape.project.supremetags.SupremeTagsPremium
+api-version: 1.13
+depend: [NBTAPI]
+softdepend:
+  - ProtocolLib
+  - PlaceholderAPI
+  - HeadDatabase
+  - VaultAPI
+  - Nexo
+  - ItemsAdder
+  - PlayerPoints
+authors: [Scape]
+folia-supported: true
+description: Allow players to show of their supreme tags!
+commands:
+  tags:
+    description: Main command for SupremeTags
+    usage: /<command>
+    aliases:
+      - tag
+      - stags
+      - supremetags
