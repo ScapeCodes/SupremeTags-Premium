@@ -43,7 +43,6 @@ settings:
   layout-type: 'BORDER'
   animated-tag-speed: 10 # in ticks
   tag-vouchers: true # should tag vouchers withdraw be enabled?
-  none-output: '' # none output string when they don't have a tag, set to '' if you want no return.
   economy: 'VAULT' # Available eco types: [VAULT, PLAYERPOINTS, EXP_LEVELS, COINSENGINE-currencyhere]
   prioritise-selected-tag: true # set false if you don't want selected tag to force at first slot.
   voucher-redeem-permission: true # set false if you don't want permission 'supremetags.voucher.[identifier]' applying to tag vouchers.
