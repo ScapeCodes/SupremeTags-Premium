@@ -56,7 +56,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 200 # this is only implemented when 'cost-system' is enabled
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   santa: # Christmas themed tag, shows in the Xmas category.
     tag:
       - '&8[&c&lSanta&8]'
@@ -96,7 +96,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100 # setting this to 0 when 'cost-system' is enabled, will make this tag free.
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   kill_master: # Christmas themed tag, shows in the Xmas category.
     tag:
       - '&8[&4&lKiller Master: &f%statistic_player_kills%&8]'
@@ -131,7 +131,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100 # setting this to 0 when 'cost-system' is enabled, will make this tag free.
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   vipplus: # vip plus tag, this comes with multi different varients.
     tag:
       - '&a[VIP+]'
@@ -197,7 +197,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100 # setting this to 0 when 'cost-system' is enabled, will make this tag free.
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   epic:
     tag:
       - '&8&l[&5&lEpic&8&l]'
@@ -232,7 +232,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'rare'
   gg:
     tag:
       - '&8&l[&e&lGG&8&l]'
@@ -267,7 +267,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   banned:
     tag:
       - '&8&l[&c&lBanned&8&l]'
@@ -302,7 +302,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   toxic:
     tag:
       - '&8&l[&2&lToxic&8&l]'
@@ -337,7 +337,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'legendary'
   heart:
     tag:
       - '&8&l<&c&l♥&8&l>'
@@ -372,7 +372,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'rare'
   star:
     tag:
       - '&8&l<&6&l★&8&l>'
@@ -407,7 +407,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   star2:
     tag:
       - '&8&l<&6&l☆&8&l>'
@@ -442,7 +442,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   star3:
     tag:
       - '&8&l<&6&l✰&8&l>'
@@ -477,7 +477,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   flower:
     tag:
       - '&8&l<&d&l❀&8&l>'
@@ -512,7 +512,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   starcircle:
     tag:
       - '&8&l<&d&l✪&8&l>'
@@ -547,7 +547,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   hacker:
     tag:
       - '&8&l[&a&lHacker&8&l]'
@@ -582,7 +582,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   umbrella:
     tag:
       - '&8&l<&b&l☂&8&l>'
@@ -617,7 +617,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   fire:
     tag:
       - '&8&l[&6&lFi&c&lre&8&l]'
@@ -652,7 +652,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'rare'
   water:
     tag:
       - '&8&l[&9&lWa&b&lter&8&l]'
@@ -687,7 +687,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   magic:
     tag:
       - '&8&l[&5&lMagic&8&l]'
@@ -722,7 +722,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'rare'
   l:
     tag:
       - '&8&l[&c&lL&8&l]'
@@ -757,7 +757,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   vape:
     tag:
       - '&8&l[&9&lVape&8&l]'
@@ -792,7 +792,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   papiphulo:
     tag:
       - '&8&l[&d&lPapiChulo&8&l]'
@@ -827,7 +827,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   yinandyang:
     tag:
       - '&8&l<&f&l☯&8&l>'
@@ -862,7 +862,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'legendary'
   rich:
     tag:
       - '&8&l[&2&lRIC&6&lH&8&l]'
@@ -897,7 +897,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   parkour:
     tag:
       - '&8&l[&7&lParkour&8&l]'
@@ -932,7 +932,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   ultra:
     tag:
       - '&8&l[&b&lUltra&8&l]'
@@ -967,7 +967,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   mega:
     tag:
       - '&8&l[&d&lMega&8&l]'
@@ -1002,7 +1002,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   pro:
     tag:
       - '&8&l[&a&lPro&8&l]'
@@ -1037,7 +1037,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   professional:
     tag:
       - '&8[&b&lProfessional&8]'
@@ -1072,7 +1072,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   donator:
     tag:
       - '&8[&aDon&2ator&8]'
@@ -1107,7 +1107,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   teamkong:
     tag:
       - '&8&l[&9&lTeamKong&8&l]'
@@ -1142,7 +1142,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   teamgodzilla:
     tag:
       - '&8&l[&6&lTeamGodzilla&8&l]'
@@ -1177,7 +1177,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'legendary'
   experienced:
     tag:
       - '&8&l[&3&lExperienced&8&l]'
@@ -1212,7 +1212,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   flash:
     tag:
       - '&8&l[&c&lFla&e&lsh&8&l]'
@@ -1248,7 +1248,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   superman:
     tag:
       - '&8&l[&9&lSuper&c&lman&8&l]'
@@ -1283,7 +1283,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   booster:
     tag:
       - '&8&l[&d&lBooster&8&l]'
@@ -1318,7 +1318,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   elite:
     tag:
       - '&8&l[&f&lElite&8&l]'
@@ -1353,7 +1353,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   superdonator:
     tag:
       - '&8&l[&a&lSuper&e&lDonator&8&l]'
@@ -1388,7 +1388,7 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'
   cool:
     tag:
       - '&8&l[&c&lCool&8&l]'
@@ -1423,4 +1423,4 @@ tags:
       display-item: BARRIER
       custom-model-data: 0
     cost: 100.0
-    rarity: '&f&lCOMMON'
+    rarity: 'common'

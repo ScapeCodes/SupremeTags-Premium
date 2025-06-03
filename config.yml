@@ -50,3 +50,23 @@ settings:
   deactivate-click: true # set false if you don't want function where if you click the active tag item in gui, it will deactivate.
   only-show-player-access-tags: false # if true, the tag menus will only show the tags that the player has access to.
   search-type: 'SIGN' # either 'SIGN' or 'ANVIL'
+  use-minimessage: false # If true the plugin will use MiniMessage exclusively, you will have to remove all legacy hex codes.
+
+placeholders:
+  # %supremetags_tag%
+  # & {tag} / {TAG} / {supremetags_tag}
+  tag:
+    none-output: ''
+    format: '%tag%'
+  # %supremetags_chattag%
+  chat:
+    none-output: ''
+    format: '%tag% '
+  # %supremetags_scorebardtag%
+  scoreboard:
+    none-output: ''
+    format: '%tag%'
+  # %supremetags_tabtag%
+  tab:
+    none-output: ''
+    format: '%tag%'

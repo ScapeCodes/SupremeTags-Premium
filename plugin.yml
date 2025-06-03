@@ -1,5 +1,5 @@
 name: 'SupremeTags'
-version: '2.1.7'
+version: '2.1.8'
 main: net.noscape.project.supremetags.SupremeTagsPremium
 api-version: 1.13
 depend: [NBTAPI]
