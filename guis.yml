@@ -222,17 +222,24 @@ gui:
       displayname: '&7Variant: %tag%'
       custom-model-data: 0
       lore:
+
         unlocked-lore:
+          - '%description%'
+          - ''
           - '&7Tag &8➜ %tag%'
           - '&7Preview &8➜ &f%player_name% %tag%&8: &fHi'
           - ''
           - '&e&nClick to Assign'
         selected-lore:
+          - '%description%'
+          - ''
           - '&7Tag &8➜ %tag%'
           - '&7Preview &8➜ &f%player_name% %tag%&8: &fHi'
           - ''
           - '&a&nThis tag is selected!'
         locked-permission:
+          - '%description%'
+          - ''
           - '&7Tag &8➜ %tag%'
           - '&7Preview &8➜ &f%player_name% %tag%&8: &fHi'
           - ''

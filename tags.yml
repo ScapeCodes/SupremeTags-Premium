@@ -156,31 +156,43 @@ tags:
         enable: true
         tag:
           - '&a[VIP&b+&a]'
+        description:
+          - '&aAqua VIP for VIP+'
         permission: supremetags.tag.vip.blue
       vipplus_red:
         enable: true
         tag:
           - '&a[VIP&c+&a]'
+        description:
+          - '&aRed VIP for VIP+'
         permission: supremetags.tag.vip.red
       vipplus_gold:
         enable: true
         tag:
           - '&a[VIP&6+&a]'
+        description:
+          - '&aGold VIP for VIP+'
         permission: supremetags.tag.vip.gold
       vipplus_pink:
         enable: true
         tag:
           - '&a[VIP&d+&a]'
+        description:
+          - '&aPink VIP for VIP+'
         permission: supremetags.tag.vip.pink
       vipplus_black:
         enable: true
         tag:
           - '&a[VIP&0+&a]'
+        description:
+          - '&aBlack VIP for VIP+'
         permission: supremetags.tag.vip.black
       vipplus_yellow:
         enable: true
         tag:
           - '&a[VIP&e+&a]'
+        description:
+          - '&aYellow VIP for VIP+'
         permission: supremetags.tag.vip.yellow
     effects: []
     voucher-item:
