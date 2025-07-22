@@ -18,6 +18,12 @@
 #     tag:
 #       - '&a[VIP&c+&a]'
 #     permission: 'supremetags.tag.vip.red'
+#
+# Economy Option Feature (PER TAG)
+# economy:
+#   enable: true/false
+#   type: 'VAULT' # Available eco types: [VAULT, PLAYERPOINTS, EXP_LEVELS, COINSENGINE-currencyhere]
+#   amount: 200
 
 tags:
   hexsupport: # 1.16+ server is required for hex colors to work.
@@ -57,6 +63,10 @@ tags:
       custom-model-data: 0
     cost: 200 # this is only implemented when 'cost-system' is enabled
     rarity: 'common'
+    economy:
+      enable: true
+      hook: 'VAULT' # Available eco types: [VAULT, PLAYERPOINTS, EXP_LEVELS, COINSENGINE-currencyhere]
+      amount: 200
   santa: # Christmas themed tag, shows in the Xmas category.
     tag:
       - '&8[&c&lSanta&8]'

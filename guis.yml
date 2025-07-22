@@ -214,6 +214,17 @@ gui:
           - ''
           - '&a&nClick to view variants'
         hide-tooltip: false # 1.21.5+ only
+      back:
+        enable: true
+        slot: 18
+        display-item: 'RED_BED'
+        displayname: '&c&lGo Back'
+        custom-model-data: 0
+        lore:
+          - '&8Back Button'
+          - ''
+          - '&a&nClick to go back to tags menu'
+        hide-tooltip: false # 1.21.5+ only
   tag-variants-menu:
     title: '&8%identifier%''s Variants'
     size: 54
@@ -222,7 +233,6 @@ gui:
       displayname: '&7Variant: %tag%'
       custom-model-data: 0
       lore:
-
         unlocked-lore:
           - '%description%'
           - ''

@@ -89,3 +89,4 @@ messages:
   no-tag-selected: '%prefix% &cNo tag selected!'
   no-effects: '&7No Effects Found!'
   effects-replace-style: '&8&l> &f%effect%'
+  placeholder-error: '%prefix% &cYou cannot use placeholders in the your tags.'
