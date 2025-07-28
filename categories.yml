@@ -4,12 +4,12 @@
 # +------------------------------------------------------+ #
 ############################################################
 
-categories-menu-fill-empty: true # set this to true if you want to fill empty slots in main menu of categories.
+categories-menu-fill-empty: false # set this to true if you want to fill empty slots in main menu of categories.
 
 categories:
   default:
-    title: '&8Default Tags (Page %page%)' # title of the category gui.
-    material: 'BOOK' # item material.
+    title: '&8Menu > &lDefault Tags' # title of the category gui.
+    material: 'NAME_TAG' # item material.
     custom-model-data: 0
     cost-category: false
     glow: false
@@ -28,8 +28,8 @@ categories:
     permission-see-category: false # if set true and if player doesn't have the permission `supremetags.category.<category>` they will not see it.
     no-permission-message: '%prefix% &cYou have no permission to open the &7Default &cCategory!'
   achievements:
-    title: '&8Achievements Tags (Page %page%)' # title of the category gui.
-    material: 'BOOK' # item material.
+    title: '&8Menu > &lAchievements Tags' # title of the category gui.
+    material: 'NAME_TAG' # item material.
     custom-model-data: 0
     cost-category: false
     glow: false
@@ -48,8 +48,8 @@ categories:
     permission-see-category: false # if set true and if player doesn't have the permission `supremetags.category.<category>` they will not see it.
     no-permission-message: '%prefix% &cYou have no permission to open the &7Achievements &cCategory!'
   holiday:
-    title: '&8Holiday Tags (Page %page%)' # title of the category gui.
-    material: 'BOOK' # item material.
+    title: '&8Menu > &lHoliday Tags' # title of the category gui.
+    material: 'NAME_TAG' # item material.
     custom-model-data: 0
     cost-category: false
     glow: false

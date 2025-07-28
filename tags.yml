@@ -41,7 +41,6 @@ tags:
     category: default
     order: 1
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -61,11 +60,10 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 200 # this is only implemented when 'cost-system' is enabled
-    rarity: 'common'
+    rarity: common
     economy:
-      enable: true
-      hook: 'VAULT' # Available eco types: [VAULT, PLAYERPOINTS, EXP_LEVELS, COINSENGINE-currencyhere]
+      enable: false
+      type: VAULT # Available eco types: [VAULT, PLAYERPOINTS, EXP_LEVELS, COINSENGINE-currencyhere]
       amount: 200
   santa: # Christmas themed tag, shows in the Xmas category.
     tag:
@@ -81,7 +79,6 @@ tags:
     category: holiday
     order: 2
     withdrawable: false
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -105,8 +102,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100 # setting this to 0 when 'cost-system' is enabled, will make this tag free.
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   kill_master: # Christmas themed tag, shows in the Xmas category.
     tag:
       - '&8[&4&lKiller Master: &f%statistic_player_kills%&8]'
@@ -121,7 +121,6 @@ tags:
     category: achivements
     order: 3
     withdrawable: false
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -140,8 +139,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100 # setting this to 0 when 'cost-system' is enabled, will make this tag free.
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   vipplus: # vip plus tag, this comes with multi different varients.
     tag:
       - '&a[VIP+]'
@@ -156,7 +158,6 @@ tags:
     category: achivements
     order: 4
     withdrawable: false
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -218,8 +219,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100 # setting this to 0 when 'cost-system' is enabled, will make this tag free.
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   epic:
     tag:
       - '&8&l[&5&lEpic&8&l]'
@@ -234,7 +238,6 @@ tags:
     category: default
     order: 5
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -253,8 +256,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'rare'
+    rarity: rare
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   gg:
     tag:
       - '&8&l[&e&lGG&8&l]'
@@ -269,7 +275,6 @@ tags:
     category: default
     order: 6
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -288,8 +293,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   banned:
     tag:
       - '&8&l[&c&lBanned&8&l]'
@@ -304,7 +312,6 @@ tags:
     category: default
     order: 7
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -323,8 +330,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   toxic:
     tag:
       - '&8&l[&2&lToxic&8&l]'
@@ -339,7 +349,6 @@ tags:
     category: default
     order: 8
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -358,8 +367,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'legendary'
+    rarity: legendary
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   heart:
     tag:
       - '&8&l<&c&l♥&8&l>'
@@ -374,7 +386,6 @@ tags:
     category: default
     order: 9
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -393,8 +404,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'rare'
+    rarity: rare
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   star:
     tag:
       - '&8&l<&6&l★&8&l>'
@@ -409,7 +423,6 @@ tags:
     category: default
     order: 10
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -428,8 +441,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   star2:
     tag:
       - '&8&l<&6&l☆&8&l>'
@@ -444,7 +460,6 @@ tags:
     category: default
     order: 11
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -463,8 +478,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   star3:
     tag:
       - '&8&l<&6&l✰&8&l>'
@@ -479,7 +497,6 @@ tags:
     category: default
     order: 12
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -498,8 +515,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   flower:
     tag:
       - '&8&l<&d&l❀&8&l>'
@@ -514,7 +534,6 @@ tags:
     category: default
     order: 13
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -533,8 +552,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   starcircle:
     tag:
       - '&8&l<&d&l✪&8&l>'
@@ -549,7 +571,6 @@ tags:
     category: default
     order: 14
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -568,8 +589,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   hacker:
     tag:
       - '&8&l[&a&lHacker&8&l]'
@@ -584,7 +608,6 @@ tags:
     category: default
     order: 15
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -603,8 +626,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   umbrella:
     tag:
       - '&8&l<&b&l☂&8&l>'
@@ -619,7 +645,6 @@ tags:
     category: default
     order: 16
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -638,8 +663,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   fire:
     tag:
       - '&8&l[&6&lFi&c&lre&8&l]'
@@ -654,7 +682,6 @@ tags:
     category: default
     order: 17
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -673,8 +700,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'rare'
+    rarity: rare
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   water:
     tag:
       - '&8&l[&9&lWa&b&lter&8&l]'
@@ -689,7 +719,6 @@ tags:
     category: default
     order: 18
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -708,8 +737,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   magic:
     tag:
       - '&8&l[&5&lMagic&8&l]'
@@ -724,7 +756,6 @@ tags:
     category: default
     order: 19
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -743,8 +774,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'rare'
+    rarity: rare
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   l:
     tag:
       - '&8&l[&c&lL&8&l]'
@@ -759,7 +793,6 @@ tags:
     category: default
     order: 20
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -778,8 +811,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   vape:
     tag:
       - '&8&l[&9&lVape&8&l]'
@@ -794,7 +830,6 @@ tags:
     category: default
     order: 21
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -813,8 +848,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   papiphulo:
     tag:
       - '&8&l[&d&lPapiChulo&8&l]'
@@ -829,7 +867,6 @@ tags:
     category: default
     order: 22
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -848,8 +885,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   yinandyang:
     tag:
       - '&8&l<&f&l☯&8&l>'
@@ -864,7 +904,6 @@ tags:
     category: default
     order: 23
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -883,8 +922,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'legendary'
+    rarity: legendary
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   rich:
     tag:
       - '&8&l[&2&lRIC&6&lH&8&l]'
@@ -899,7 +941,6 @@ tags:
     category: default
     order: 24
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -918,8 +959,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   parkour:
     tag:
       - '&8&l[&7&lParkour&8&l]'
@@ -934,7 +978,6 @@ tags:
     category: default
     order: 25
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -953,8 +996,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   ultra:
     tag:
       - '&8&l[&b&lUltra&8&l]'
@@ -969,7 +1015,6 @@ tags:
     category: default
     order: 26
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -988,8 +1033,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   mega:
     tag:
       - '&8&l[&d&lMega&8&l]'
@@ -1004,7 +1052,6 @@ tags:
     category: default
     order: 27
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -1023,8 +1070,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   pro:
     tag:
       - '&8&l[&a&lPro&8&l]'
@@ -1039,7 +1089,6 @@ tags:
     category: default
     order: 28
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -1058,8 +1107,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   professional:
     tag:
       - '&8[&b&lProfessional&8]'
@@ -1074,7 +1126,6 @@ tags:
     category: default
     order: 29
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -1093,8 +1144,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   donator:
     tag:
       - '&8[&aDon&2ator&8]'
@@ -1109,7 +1163,6 @@ tags:
     category: default
     order: 30
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -1128,8 +1181,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   teamkong:
     tag:
       - '&8&l[&9&lTeamKong&8&l]'
@@ -1144,7 +1200,6 @@ tags:
     category: default
     order: 31
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -1163,8 +1218,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   teamgodzilla:
     tag:
       - '&8&l[&6&lTeamGodzilla&8&l]'
@@ -1179,7 +1237,6 @@ tags:
     category: default
     order: 32
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -1198,8 +1255,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'legendary'
+    rarity: legendary
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   experienced:
     tag:
       - '&8&l[&3&lExperienced&8&l]'
@@ -1214,7 +1274,6 @@ tags:
     category: default
     order: 33
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -1233,8 +1292,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   flash:
     tag:
       - '&8&l[&c&lFla&e&lsh&8&l]'
@@ -1249,7 +1311,6 @@ tags:
     category: default
     order: 34
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -1269,8 +1330,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   superman:
     tag:
       - '&8&l[&9&lSuper&c&lman&8&l]'
@@ -1285,7 +1349,6 @@ tags:
     category: default
     order: 35
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -1304,8 +1367,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   booster:
     tag:
       - '&8&l[&d&lBooster&8&l]'
@@ -1320,7 +1386,6 @@ tags:
     category: default
     order: 36
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -1339,8 +1404,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   elite:
     tag:
       - '&8&l[&f&lElite&8&l]'
@@ -1355,7 +1423,6 @@ tags:
     category: default
     order: 37
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -1374,8 +1441,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   superdonator:
     tag:
       - '&8&l[&a&lSuper&e&lDonator&8&l]'
@@ -1390,7 +1460,6 @@ tags:
     category: default
     order: 38
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -1409,8 +1478,11 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200
   cool:
     tag:
       - '&8&l[&c&lCool&8&l]'
@@ -1425,7 +1497,6 @@ tags:
     category: default
     order: 39
     withdrawable: true
-    cost-tag: false
     displayname: '&7Tag: %tag%'
     custom-model-data: 0
     display-item: NAME_TAG
@@ -1444,5 +1515,8 @@ tags:
       displayname: '&7Tag: %tag%'
       display-item: BARRIER
       custom-model-data: 0
-    cost: 100.0
-    rarity: 'common'
+    rarity: common
+    economy:
+      enabled: false
+      type: VAULT
+      amount: 200

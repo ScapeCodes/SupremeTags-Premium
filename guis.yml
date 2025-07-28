@@ -12,21 +12,62 @@
 
 gui:
   main-menu:
-    title: '&8Main Menu'
+    title: '&8Menu > &lCategories'
     size: 27
     custom-items:
+      info:
+        enable: true
+        slot: 3
+        displayname: '&aWhat are Tags?'
+        material: 'BOOK'
+        custom-model-data: 0
+        lore:
+          - '&8Chat Tags'
+          - ''
+          - '&7Tags are basically like prefix''s'
+          - '&7and they can be display in chat/tab.'
+          - ''
+          - '&7Select a category below to see our amazing'
+          - '&7tags.'
+        click-commands: []
       close:
         enable: true
-        slot: 26
-        displayname: '&c&lClose Menu'
+        slot: 5
+        displayname: '&cClose'
         material: 'RED_BED'
         custom-model-data: 0
         lore:
           - '&7Click to close the menu!'
         click-commands:
           - '[close]'
+      border:
+        enable: true
+        slots:
+          - 0
+          - 1
+          - 2
+          - 4
+          - 6
+          - 7
+          - 8
+          - 9
+          - 17
+          - 18
+          - 19
+          - 20
+          - 21
+          - 22
+          - 23
+          - 24
+          - 25
+          - 26
+        displayname: '&c'
+        material: 'GRAY_STAINED_GLASS_PANE'
+        custom-model-data: 0
+        lore: []
+        click-commands: []
   personal-tags:
-    title: '&8Personal Tags'
+    title: '&8Menu > &lPersonal Tags'
     items:
       no-tags-item:
         enable: true
@@ -40,7 +81,7 @@ gui:
     title: '&8Tag Editor > %identifier%'
     size: 27
   tag-menu:
-    title: '&8Tag Menu'
+    title: '&8Menu > &lTags'
     size: 54
     tags-per-page: 28
     slots-tag:
@@ -136,7 +177,7 @@ gui:
   # Don't change the item names as this will remove functionality.
   tag-actions-menu:
     enable: false # if false, the system will use its default click to active tag function.
-    title: 'Tag Actions'
+    title: '&8Menu > &lTag Actions'
     size: 27
     functions:
       # withdraw-tag - withdraw
@@ -257,7 +298,7 @@ gui:
           - ''
           - '&c&nThis tag is locked'
   tag-editor-menu:
-    title: '&8Tag Editor'
+    title: '&8Menu > &lTag Editor'
     specific-tag-editor-title: '&7Tag ➟ [%identifier%]'
     tag-item:
       displayname: '&7Tag: %tag%'
